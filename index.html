@@ -6,18 +6,19 @@
     <title>图片示例</title>
     <style>
         img {
-            max-width: 100%; /* 图片最大宽度不超过其容器的宽度 */
-            height: auto;    /* 高度自动调整，保持图片比例 */
-            display: block;  /* 消除图片底部的空隙（如果存在）*/
-            margin: 10px auto; /* 上下外边距 10px，水平居中 */
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
         }
         .image-container {
-          /* 可以设置容器的具体宽度 */
-          width: 500px;
-          margin: 20px auto; /* 容器居中, 上下外边距20px */
-          border: 1px solid #ddd; /* 可选：添加边框 */
-          padding: 10px;  /* 可选：添加内边距 */
-
+            width: 500px; /* 默认宽度 */
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .larger-image-container { /* 新增的类 */
+            width: 800px; /* 或者你想要的宽度 */
         }
     </style>
 </head>
@@ -26,7 +27,7 @@
         <img src="https://dbaplus.cn/uploadfile/2023/0203/20230203103832342.png" alt="MySQL 运维进阶指南">
     </div>
 
-    <div class="image-container">
+    <div class="image-container larger-image-container">  <!-- 添加了 larger-image-container 类 -->
         <img src="https://dbaplus.cn/uploadfile/2023/0203/20230203103750587.jpg" alt="目录">
     </div>
 </body>
