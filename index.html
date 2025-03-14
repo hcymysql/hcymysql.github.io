@@ -1,39 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-CN">  <!-- 或者使用 lang="en"，根据你的网站语言 -->
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的 GitHub Pages 网站</title>
+    <title>图片示例</title>
     <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding-top: 50px;
-            background-color: #f0f0f0; /* 浅灰色背景 */
+        img {
+            max-width: 100%; /* 图片最大宽度不超过其容器的宽度 */
+            height: auto;    /* 高度自动调整，保持图片比例 */
+            display: block;  /* 消除图片底部的空隙（如果存在）*/
+            margin: 10px auto; /* 上下外边距 10px，水平居中 */
         }
-        h1 {
-            color: #333; /* 深灰色标题 */
-        }
-        p {
-            color: #666; /* 较浅的灰色段落文字 */
-        }
-        .container{
-            width: 80%;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px; /* 圆角 */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影 */
+        .image-container {
+          /* 可以设置容器的具体宽度 */
+          width: 500px;
+          margin: 20px auto; /* 容器居中, 上下外边距20px */
+          border: 1px solid #ddd; /* 可选：添加边框 */
+          padding: 10px;  /* 可选：添加内边距 */
+
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>欢迎来到我的 GitHub Pages 网站！</h1>
-        <p>这是一个测试页面。</p>
-        <p>GitHub Pages 部署成功！</p>
-        <p>你可以在这里添加更多内容，构建你自己的网站。</p>
+    <div class="image-container">
+        <img src="https://dbaplus.cn/uploadfile/2023/0203/20230203103832342.png" alt="MySQL 运维进阶指南">
+    </div>
 
+    <div class="image-container">
+        <img src="https://dbaplus.cn/uploadfile/2023/0203/20230203103750587.jpg" alt="目录">
     </div>
 </body>
 </html>
